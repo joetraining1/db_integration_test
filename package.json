@@ -1,0 +1,20 @@
+{
+  "name": "db_integratation_test",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "init:db": "node config\\mysqlServer.js",
+    "init:table": "node services\\MahasiswaRepositories.js",
+    "test:insert": "node services\\MahasiswaCrud.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "dependencies": {
+    "@scaleway/random-name": "^5.1.2",
+    "mysql2": "^3.14.3"
+  }
+}
